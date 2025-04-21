@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
+
 import Image from "next/image";
 import React, { useState } from "react";
 import {
@@ -39,7 +42,7 @@ export const AnimatedTooltip = ({
 
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <div
           className="group relative -mr-4"
           key={item.name}

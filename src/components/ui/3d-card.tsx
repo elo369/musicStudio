@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import React, {
   createContext,
   useState,
@@ -121,6 +123,7 @@ export const CardItem = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isMouseEntered] = useMouseEnter();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     handleAnimations();
   }, [isMouseEntered]);
